@@ -167,7 +167,11 @@ public class PlayerStatus {
     }
 
     private double distance(PlayerStatus opponent) {
-        return Math.sqrt(((this.positionX - opponent.positionY) * (this.positionX - opponent.positionY)) + ((this.positionY - opponent.positionY) * (this.positionY - opponent.positionY)));
+        //return Math.sqrt(((this.positionX - opponent.positionY) * (this.positionX - opponent.positionY)) + ((this.positionY - opponent.positionY) * (this.positionY - opponent.positionY)));
+        double x = Math.pow((positionX - opponent.positionX), 2);
+        double y = Math.pow((positionY - opponent.positionY), 2);
+        return Math.sqrt(x + y);
+
     }
 
     public boolean shouldAttackOpponent(PlayerStatus opponent) {
