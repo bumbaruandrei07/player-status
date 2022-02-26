@@ -162,8 +162,14 @@ public class PlayerStatus {
     }
 
     public void displayPlayerStatus() {
-        System.out.println("Nickname -  " + nickname + "  Score -  " + score + "  Health -  " + health + "  Lives -  " + lives + "  Weapon -  " + getWeaponInHand() + "  Game -  " + getGameName() +
-                " Position X -  " + positionX + " Position Y -  " + positionY);
+
+        System.out.format("+-------------------------+----------+----------+---------+--------------+%n");
+        System.out.printf("| Player name             | Lives    | Score    | Health  | Weapon       |%n");
+        System.out.format("+-------------------------+----------+----------+---------+--------------+%n");
+        System.out.printf("|      " + getNickname() + "             |   " + lives +  "   |" + score + "  |  " + health + "   |   " + getWeaponInHand() + "%n");
+        System.out.format("+-------------------------+----------+----------+---------+--------------+%n");
+        System.out.println();
+
     }
 
     private double distance(PlayerStatus opponent) {
