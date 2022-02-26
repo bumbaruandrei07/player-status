@@ -163,11 +163,11 @@ public class PlayerStatus {
 
     public void displayPlayerStatus() {
 
-        System.out.format("+-------------------------+----------+----------+---------+--------------+%n");
-        System.out.printf("| Player name             | Lives    | Score    | Health  | Weapon       |%n");
-        System.out.format("+-------------------------+----------+----------+---------+--------------+%n");
-        System.out.printf("|      " + getNickname() + "             |   " + lives +  "   |" + score + "  |  " + health + "   |   " + getWeaponInHand() + "%n");
-        System.out.format("+-------------------------+----------+----------+---------+--------------+%n");
+        System.out.format("+-------------------------+----------+----------+---------+--------------------------+%n");
+        System.out.printf("|        Player name      | Lives    | Score    | Health  |          Weapon          |%n");
+        System.out.format("+-------------------------+----------+----------+---------+--------------------------+%n");
+        System.out.printf("|         " + getNickname() + "     |   " + lives + "      |  " + score + "   |  " + health + "      |   " + getWeaponInHand() + "            |%n");
+        System.out.format("+-------------------------+----------+----------+---------+--------------------------+%n");
         System.out.println();
 
     }
